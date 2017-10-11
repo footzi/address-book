@@ -1,13 +1,13 @@
 $("#get").on("click", () => {
-        $("input").val(""); //очистка полей ввода
-        $.ajax({
-            type: "POST",
-            url: "/test",
-            success: data => {
-                node(data);
-            }
-        })
-    });
+    $("input").val(""); //очистка полей ввода
+    $.ajax({
+        type: "POST",
+        url: "/test",
+        success: data => {
+            node(data);
+        }
+    })
+});
 
 $("#send").on("click", () => {
     let sendObj = {};
@@ -64,11 +64,11 @@ const node = (data) => {
 
         btn.innerHTML = "Удалить";
         btn.setAttribute("del", i);
-        btn.className="btn btn-danger btn-sm";
+        btn.className = "btn btn-danger btn-sm";
 
         document.getElementById("line-" + i).appendChild(td);
-        document.querySelector("#line-"+i).querySelector("td:last-child").appendChild(btn);
-        
+        document.querySelector("#line-" + i).querySelector("td:last-child").appendChild(btn);
+
 
         //$("#line-" + i).append(btn);
     };

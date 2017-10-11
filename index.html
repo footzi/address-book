@@ -6,32 +6,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>The address book</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 
 </head>
+
 <body>
-    <!-- <div>
-        <label id="firstname">Имя</label><input id="in-firstname" type="text" name="fistname">
-    </div>
-    <div>
-        <label id="secondname">Фамилия</label><input id="in-secondname" type="text" name="secondname">
-    </div>
-    <div>
-        <label id="age">Возраст</label><input id="in-age" type="number" name="age">
-    </div>
-    <button id="send">Отправить данные</button>
-    <button id="get">Получить данные</button>
-    <p>Таблица:</p>
-    <table>
-    </table> -->
     <main class="main">
         <div class="container">
             <div class="row">
                 <section class="title col-md-12 col-sm-12">
                     <h1 class="title__h1 text-center">Адресная книга</h1>
                     <div class="title__button">
-                        <button class="btn btn-warning" id="get">Получить данные</button>
+                        <button class="btn btn-primary" id="get">Получить данные</button>
                     </div>
                 </section>
                 <section class="table-content col-md-12 col-sm-12">
@@ -69,36 +56,63 @@
                         </tbody>
                     </table>
                 </section>
-                <section class="inputs col-md-6 col-sm-6">
+                <section class="inputs col-lg-6 col-md-6 col-sm-6">
                     <h2 class="inputs__title text-center">Добавить данные:</h2>
                     <div class="inputs__item form-group row">
-                        <label class="col-sm-2 col-form-label" for="firstname">Имя:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="firstname" placeholder="Владислав">    
+                        <label class="col-lg-2 col-md-2 col-sm-2 col-form-label" for="firstname">Имя:</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10">
+                            <input type="text" class="form-control" id="firstname" placeholder="Владислав" required>
                         </div>
                     </div>
+
                     <div class="inputs__item form-group row">
-                        <label class="col-sm-2 col-form-label" for="secondname">Фамилия</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="secondname" placeholder="Манаков">    
+                        <label class="col-lg-2 col-md-2 col-sm-2 col-form-label" for="secondname">Фамилия</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10">
+                            <input type="text" class="form-control" id="secondname" placeholder="Манаков" required>
                         </div>
                     </div>
-                    <input type="text" id="city">
-                    <input type="text" id="address">
-                    <input type="email" id="email">
-                    <input type="phone" id="phone">
-                    <div class="inputs__button">
-                        <button class="btn btn-success" id="send">Отправить</button>    
+
+                    <div class="inputs__item form-group row">
+                        <label class="col-lg-2 col-md-2 col-sm-2 col-form-label" for="city">Город</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10">
+                            <input type="text" class="form-control" id="city" placeholder="Санкт-Петербург" required>
+                        </div>
                     </div>
-                    
+
+                    <div class="inputs__item form-group row">
+                        <label class="col-lg-2 col-md-2 col-sm-2 col-form-label" for="address">Адрес</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10">
+                            <input type="text" class="form-control" id="address" placeholder="пр-кт Невский д.100 кв.5" required>
+                        </div>
+                    </div>
+
+                    <div class="inputs__item form-group row">
+                        <label class="col-lg-2 col-md-2 col-sm-2 col-form-label" for="email">E-mail</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="gybka_bob@gmail.com" required>
+                        </div>
+                    </div>
+
+                    <div class="inputs__item form-group row">
+                        <label class="col-lg-2 col-md-2 col-sm-2 col-form-label" for="phone">Телефон</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10">
+                            <input type="number" class="form-control" id="phone" placeholder="+7 953 555 55 55" required>
+                        </div>
+                    </div>
+
+                    <div class="inputs__button">
+                        <button class="btn btn-success" id="send">Отправить</button>
+                    </div>
+
                 </section>
                 <!-- <section class="about"></section>
  -->
             </div>
         </div>
-        
+
     </main>
 </body>
 <script src="js/jquery.min.js" type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript"></script>
+
 </html>
