@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The address book</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- <div>
+        <label id="firstname">Имя</label><input id="in-firstname" type="text" name="fistname">
+    </div>
+    <div>
+        <label id="secondname">Фамилия</label><input id="in-secondname" type="text" name="secondname">
+    </div>
+    <div>
+        <label id="age">Возраст</label><input id="in-age" type="number" name="age">
+    </div>
+    <button id="send">Отправить данные</button>
+    <button id="get">Получить данные</button>
+    <p>Таблица:</p>
+    <table>
+    </table> -->
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <section class="title col-md-12 col-sm-12">
+                    <h1 class="title__h1 text-center">Адресная книга</h1>
+                    <div class="title__button">
+                        <button class="btn btn-warning" id="get">Получить данные</button>
+                    </div>
+                </section>
+                <section class="table-content col-md-12 col-sm-12">
+                    <table class="table table-striped table-hover">
+                        <thead class="thead-reverse">
+                            <tr>
+                                <th>Имя</th>
+                                <th>Фамилия</th>
+                                <th>Город</th>
+                                <th>Адрес</th>
+                                <th>E-mail</th>
+                                <th>Телефон</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>Манаков</td>
+                                <td>Владислав</td>
+                                <td>Санкт-Петербург</td>
+                                <td>ул.Кима д.4, кв. 521</td>
+                                <td>footzi@mail.ru</td>
+                                <td>89531733296</td>
+                                <td><button class="btn btn-danger btn-sm">Удалить</button></td>    
+                            </tr>
+                            <tr>
+                                <td>Агафонова</td>
+                                <td>Анна</td>
+                                <td>Нижний Новгород</td>
+                                <td>ул.Ванеева 116 кв.99</td>
+                                <td>specy91@rambler.ru</td>
+                                <td>89531733297</td>
+                                <td><button class="btn btn-danger btn-sm">Удалить</button></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </section>
+                <section class="inputs col-md-6 col-sm-6">
+                    <h2 class="inputs__title text-center">Добавить данные:</h2>
+                    <div class="inputs__item form-group row">
+                        <label class="col-sm-2 col-form-label" for="firstname">Имя:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="firstname" placeholder="Владислав">    
+                        </div>
+                    </div>
+                    <div class="inputs__item form-group row">
+                        <label class="col-sm-2 col-form-label" for="secondname">Фамилия</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="secondname" placeholder="Манаков">    
+                        </div>
+                    </div>
+                    <input type="text" id="city">
+                    <input type="text" id="address">
+                    <input type="email" id="email">
+                    <input type="phone" id="phone">
+                    <div class="inputs__button">
+                        <button class="btn btn-success" id="send">Отправить</button>    
+                    </div>
+                    
+                </section>
+                <!-- <section class="about"></section>
+ -->
+            </div>
+        </div>
+        
+    </main>
+</body>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</html>
