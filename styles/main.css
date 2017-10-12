@@ -1,19 +1,46 @@
+button {
+    cursor: pointer;
+}
+
 .main {
-	margin-top: 30px;
+    margin-top: 30px;
 }
+
 .title__h1 {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .table-content {
-	margin-top: 20px;
+    margin-top: 20px;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
 }
 
 .inputs {
-	margin: 20px auto 0 auto;
+    margin: 40px auto 0 auto;
+    padding: 10px 20px;
 }
+
 .inputs__title {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-.title__button, .inputs__button {
+
+.title__button,
+.inputs__button {
+    text-align: center;
+}
+
+.about {
+	margin: 50px auto 0 auto;
+	text-align: justify;
+}
+.about__buttons {
 	text-align: center;
+	margin-bottom:20px;
+}
+.about__text {
+	display: none;
 }

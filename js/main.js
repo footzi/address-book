@@ -1,13 +1,13 @@
 $("#get").on("click", () => {
-        $("input").val(""); //очистка полей ввода
-        $.ajax({
-            type: "POST",
-            url: "/test",
-            success: data => {
-                node(data);
-            }
-        })
+    $("input").val(""); //очистка полей ввода
+    $.ajax({
+        type: "POST",
+        url: "/test",
+        success: data => {
+            node(data);
+        }
     });
+});
 
 $("#send").on("click", () => {
     let sendObj = {};
@@ -17,7 +17,6 @@ $("#send").on("click", () => {
     sendObj.address = document.getElementById("address").value;
     sendObj.email = document.getElementById("email").value;
     sendObj.phone = document.getElementById("phone").value;
-    console.log(sendObj)
     $("input").val(""); //очистка полей ввода
     if ((sendObj.firstname == "") && (sendObj.secondname == "") && (sendObj.city == "") && (sendObj.address == "") && (sendObj.email == "") && (sendObj.phone == "")) {
         alert("Введите данные!")
@@ -64,13 +63,13 @@ const node = (data) => {
 
         btn.innerHTML = "Удалить";
         btn.setAttribute("del", i);
-        btn.className="btn btn-danger btn-sm";
+        btn.className = "btn btn-danger btn-sm";
 
         document.getElementById("line-" + i).appendChild(td);
-        document.querySelector("#line-"+i).querySelector("td:last-child").appendChild(btn);
-        
+        document.querySelector("#line-" + i).querySelector("td:last-child").appendChild(btn);
 
-        //$("#line-" + i).append(btn);
+
+    
     };
 
     $("table").on("click", "button", function() {
@@ -96,3 +95,11 @@ const node = (data) => {
         })
     })
 }
+
+
+$(".about__buttons_open").on("click", function(){
+		$(".about__text").fadeIn();
+	});
+$(".about__buttons_сlose").on("click", function(){
+		$(".about__text").fadeOut();
+	})

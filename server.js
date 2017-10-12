@@ -16,7 +16,7 @@ app.post("/test", function(req, res) {
 
         fs.writeFile("js/data.json", JSON.stringify(people), function(err) {
             if (err) throw err;
-            console.log("write data file");
+            console.log("data recorded");
         })
     })
     res.send(people);
