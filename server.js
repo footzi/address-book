@@ -3,6 +3,7 @@ let app = express();
 let path = require("path");
 let fs = require("fs");
 
+let port = process.env.PORT || 8080;
 let people = fs.readFileSync("js/data.json");
 let log = "log.txt"
 
@@ -40,6 +41,6 @@ app.post("/send", function(req, res) {
     })
 })
 
-app.listen("8080", function() {
+app.listen(port, function() {
     console.log("server is started on port 8080")
 });
