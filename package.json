@@ -9,7 +9,10 @@
     },
     "devDependencies": {},
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scripts": {
+            "postinstall": "npm install express"
+        }
     },
     "engines": {
 		"node": "6.9.4",
