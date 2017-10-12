@@ -2,7 +2,11 @@
     "name": "address-book",
     "version": "1.0.0",
     "description": "",
+<<<<<<< HEAD
     "main": "server.js",
+=======
+    "main": "main.js",
+>>>>>>> d81875065de9f3bdc2d5ab9eb1dec7b1c5e1d402
     "dependencies": {
         "express": "^4.16.2"
     },
@@ -10,10 +14,14 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+<<<<<<< HEAD
     "engines": {
     "node": "6.9.4",
     "npm": "3.10.10"
     },
     "author": "Vladislav Manakov",
+=======
+    "author": "",
+>>>>>>> d81875065de9f3bdc2d5ab9eb1dec7b1c5e1d402
     "license": "ISC"
 }

@@ -6,7 +6,11 @@ $("#get").on("click", () => {
         success: data => {
             node(data);
         }
+<<<<<<< HEAD
     });
+=======
+    })
+>>>>>>> d81875065de9f3bdc2d5ab9eb1dec7b1c5e1d402
 });
 
 $("#send").on("click", () => {
@@ -67,6 +71,10 @@ const node = (data) => {
 
         document.getElementById("line-" + i).appendChild(td);
         document.querySelector("#line-" + i).querySelector("td:last-child").appendChild(btn);
+<<<<<<< HEAD
+=======
+
+>>>>>>> d81875065de9f3bdc2d5ab9eb1dec7b1c5e1d402
 
 
     
@@ -94,6 +102,7 @@ const node = (data) => {
             }
         })
     })
+<<<<<<< HEAD
 }
 
 
@@ -103,3 +112,6 @@ $(".about__buttons_open").on("click", function(){
 $(".about__buttons_сlose").on("click", function(){
 		$(".about__text").fadeOut();
 	})
+=======
+}
+>>>>>>> d81875065de9f3bdc2d5ab9eb1dec7b1c5e1d402

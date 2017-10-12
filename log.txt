@@ -67,4 +67,7 @@ address: ::1 time: Wed Oct 11 2017 07:05:29 GMT+0300 (RTZ 2 (зима)) data: {"
 address: ::1 time: Wed Oct 11 2017 07:05:46 GMT+0300 (RTZ 2 (зима)) data: {"firstname":"цааца","secondname":"","city":"","address":"","email":"","phone":""}
 address: ::1 time: Wed Oct 11 2017 07:05:55 GMT+0300 (RTZ 2 (зима)) data: {"firstname":"","secondname":"","city":"цацацацаца","address":"","email":"","phone":""}
 address: ::1 time: Wed Oct 11 2017 07:10:26 GMT+0300 (RTZ 2 (зима)) data: {"firstname":"Владислав","secondname":"Манаков","city":"efefef","address":"Кима д4 кв 521","email":"footzi@mail.ru","phone":"9531733296"}
+<<<<<<< HEAD
 address: ::1 time: Wed Oct 11 2017 08:16:18 GMT+0300 (RTZ 2 (зима)) data: {"firstname":"hhh","secondname":"","city":"","address":"","email":"","phone":""}
+=======
+>>>>>>> d81875065de9f3bdc2d5ab9eb1dec7b1c5e1d402

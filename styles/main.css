@@ -22,10 +22,15 @@ button {
 .inputs {
     margin: 40px auto 0 auto;
     padding: 10px 20px;
+<<<<<<< HEAD
+=======
+    border: 2px solid #e9ecef;
+>>>>>>> d81875065de9f3bdc2d5ab9eb1dec7b1c5e1d402
 }
 
 .inputs__title {
     margin-bottom: 20px;
+<<<<<<< HEAD
 }
 
 .title__button,
@@ -43,4 +48,11 @@ button {
 }
 .about__text {
 	display: none;
+=======
+}
+
+.title__button,
+.inputs__button {
+    text-align: center;
+>>>>>>> d81875065de9f3bdc2d5ab9eb1dec7b1c5e1d402
 }
