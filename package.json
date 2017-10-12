@@ -1,8 +1,9 @@
 {
     "name": "address-book",
     "version": "1.0.0",
-    "description": "",
+    "description": "Heroku App",
     "main": "server.js",
+    "private": true,
     "dependencies": {
         "express": "^4.16.2"
     },
